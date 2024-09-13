@@ -25,11 +25,11 @@ class HelloWorldScreen extends StatefulWidget {
 }
 
 class _HelloWorldScreenState extends State<HelloWorldScreen> {
-  String _displayText = ''; // Başlangıçta boş metin
+  String _displayText = ''; 
 
   void _showHelloWorld() {
     setState(() {
-      _displayText = 'Hello, World!'; // Butona basıldığında metni ayarla
+      _displayText = 'Hello, World!'; 
     });
   }
 
@@ -45,9 +45,9 @@ class _HelloWorldScreenState extends State<HelloWorldScreen> {
           children: <Widget>[
             Text(
               _displayText,
-              style: TextStyle(fontSize: 24), // Metin boyutunu ayarlama
+              style: TextStyle(fontSize: 24), 
             ),
-            SizedBox(height: 20), // Metin ile buton arasına boşluk ekleme
+            SizedBox(height: 20), 
             ElevatedButton(
               onPressed: _showHelloWorld,
               child: Text('Show Hello World'),
