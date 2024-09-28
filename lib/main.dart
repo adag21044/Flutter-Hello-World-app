@@ -25,7 +25,8 @@ class HelloWorldScreen extends StatefulWidget {
 }
 
 class _HelloWorldScreenState extends State<HelloWorldScreen> {
-  String _displayText = ''; // Başlangıçta boş metin
+  // Başlangıçta "Press the button!" yazısı görünsün
+  String _displayText = 'Press the button!'; 
 
   void _showHelloWorld() {
     setState(() {
@@ -44,7 +45,7 @@ class _HelloWorldScreenState extends State<HelloWorldScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              _displayText,
+              _displayText, // Mevcut metni göster
               style: TextStyle(fontSize: 24), // Metin boyutunu ayarlama
             ),
             SizedBox(height: 20), // Metin ile buton arasına boşluk ekleme
